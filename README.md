@@ -48,7 +48,7 @@ To schedule automatic backups, add a cron job that executes the script at your d
 ## Quickstart Command (with all default options)
 
 ```bash 
-sudo sh -c 'curl -o /usr/local/bin/simplecronjobbackup.sh https://raw.githubusercontent.com/drhdev/simplecronjobbackup/main/simplecronjobbackup.sh && chmod +x /usr/local/bin/simplecronjobbackup.sh && (crontab -l 2>/dev/null; echo "0 0 * * * /usr/local/bin/simplecronjobbackup.sh") | crontab -'
+sudo sh -c 'curl -o /usr/local/bin/simplecronjobbackup.sh https://raw.githubusercontent.com/drhdev/simplecronjobbackup/main/simplecronjobbackup.sh && chmod +x /usr/local/bin/simplecronjobbackup.sh'; (crontab -l 2>/dev/null; echo "0 0 * * * /usr/local/bin/simplecronjobbackup.sh") | crontab -
 ```
 
 
