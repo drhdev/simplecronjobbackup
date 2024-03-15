@@ -11,6 +11,8 @@
 # 3. 'chmod +x /usr/local/bin/simplecronjobbackup.sh'
 # 4. './simplecronjobbackup.sh'
 # 5. Optional: add to crontab with 'crontab -e' and enter '0 0 * * * /usr/loacl/bin/simplecronjobbackup.sh'
+# Quickstart: sudo sh -c 'curl -o /usr/local/bin/simplecronjobbackup.sh https://raw.githubusercontent.com/drhdev/simplecronjobbackup/main/simplecronjobbackup.sh && chmod +x /usr/local/bin/simplecronjobbackup.sh && (crontab -l 2>/dev/null; echo "0 0 * * * /usr/local/bin/simplecronjobbackup.sh") | crontab -'
+
 
 # Configurable path for saving the backup txt file
 BACKUP_PATH="${HOME}/cronjob_backups"
