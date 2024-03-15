@@ -45,6 +45,11 @@ To schedule automatic backups, add a cron job that executes the script at your d
 - `BACKUP_FILE_NAME`: Naming pattern for backup files, including the date and time.
 - `MAX_BACKUPS`: Maximum number of backup files to retain.
 
+## Quickstart Command (with all default options)
+
+```sudo sh -c 'curl -o /usr/local/bin/simplecronjobbackup.sh https://raw.githubusercontent.com/drhdev/simplecronjobbackup/main/simplecronjobbackup.sh && chmod +x /usr/local/bin/simplecronjobbackup.sh && (crontab -l 2>/dev/null; echo "0 0 * * * /usr/local/bin/simplecronjobbackup.sh") | crontab -'```
+
+
 ## License
 
 This project is licensed under the GNU General Public License.
